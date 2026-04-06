@@ -1,0 +1,162 @@
+
+.ocasion-section {
+  width: 100%;
+  background: #f8f4ef;
+  padding: 80px 0 90px;
+}
+
+.ocasion-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 42px;
+}
+
+.ocasion-heading {
+  text-align: center;
+  margin-bottom: 44px;
+}
+
+.ocasion-heading h2 {
+  margin: 0 auto 18px;
+  max-width: 1100px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.15;
+  color: #2f241f;
+}
+
+.ocasion-heading p {
+  margin: 0 auto;
+  max-width: 900px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  line-height: 1.45;
+  color: #6e625c;
+}
+
+.excontainers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 34px;
+}
+
+.excontainer {
+  position: relative;
+  min-height: 500px;
+  border-radius: 18px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.12);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.excontainer:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 34px rgba(0, 0, 0, 0.18);
+}
+
+.card-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 24px;
+  background: linear-gradient(
+    to top,
+    rgba(20, 16, 16, 0.88) 0%,
+    rgba(20, 16, 16, 0.55) 18%,
+    rgba(20, 16, 16, 0.08) 42%,
+    rgba(20, 16, 16, 0) 60%
+  );
+}
+
+.card-overlay h3 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #fff8f1;
+  text-align: center;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.28);
+}
+
+/* Placeholders de imágenes en assets */
+.cumpleanos {
+  background-image: url("../../assets/ocasion-cumpleanos.jpg");
+}
+
+.aniversarios {
+  background-image: url("../../assets/ocasion-aniversarios.jpg");
+}
+
+.dias-especiales {
+  background-image: url("../../assets/ocasion-dias-especiales.jpg");
+}
+
+/* Tablet */
+@media (max-width: 1200px) {
+  .ocasion-container {
+    padding: 0 24px;
+  }
+
+  .ocasion-heading h2 {
+    font-size: 3rem;
+  }
+
+  .ocasion-heading p {
+    font-size: 1.45rem;
+  }
+
+  .excontainers {
+    gap: 22px;
+  }
+
+  .excontainer {
+    min-height: 390px;
+  }
+
+  .card-overlay h3 {
+    font-size: 2rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .ocasion-section {
+    padding: 56px 0 64px;
+  }
+
+  .ocasion-container {
+    padding: 0 18px;
+  }
+
+  .ocasion-heading {
+    margin-bottom: 30px;
+  }
+
+  .ocasion-heading h2 {
+    font-size: 2.2rem;
+    margin-bottom: 14px;
+  }
+
+  .ocasion-heading p {
+    font-size: 1.1rem;
+  }
+
+  .excontainers {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .excontainer {
+    min-height: 320px;
+  }
+
+  .card-overlay h3 {
+    font-size: 1.8rem;
+  }
+}
