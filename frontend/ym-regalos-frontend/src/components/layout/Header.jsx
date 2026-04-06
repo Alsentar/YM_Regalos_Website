@@ -1,24 +1,21 @@
 
-import React from "react";
+import { Link } from 'react-router'
 
-function Header()
-{
+function Header() {
+  return (
+    <header>
+      <h3>YM Regalos & Eventos</h3>
 
-  return(
+      <nav>
+        <Link to="/">Inicio</Link>
+        <Link to="/catalogo">Catálogo</Link>
+        <Link to="/nosotros">Nosotros</Link>
+        <Link to="/contacto">Contacto</Link>
+      </nav>
 
-    <>
-
-    <h3>YM Regalos & Eventos</h3>
-
-    <link>Inicio</link>
-    <link>Catalogo</link>
-    <link>Nosotros</link>
-    <link>Contacto</link>
-    <button>Crea tu bandeja</button>
-
-    </>
+      <button>Crea tu bandeja</button>
+    </header>
   )
-
 }
 
-export default Header;
+export default Header
